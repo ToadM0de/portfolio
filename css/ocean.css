@@ -1,0 +1,45 @@
+.ocean {
+    height: 2000px;
+    background: linear-gradient(to top, #0e0116fb, #093028fb);
+    margin-top: 300px;
+
+}
+
+#particles {
+    width: 100%;
+    height: 100%;
+}
+
+.fish {
+    position: absolute;
+}
+
+.fish1 {
+    top: 110%;
+    height: 60px;
+    animation: animate 15s linear infinite
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-50px);
+        left: -25%;
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    75% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+        left: 150%;
+    }
+}

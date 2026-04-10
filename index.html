@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivy Ditzenberger's Portfolio</title>
+  </head>
+
+  <body class="splatToggle">
+    <section>
+      <div class="rain frontRow"></div>
+      <div class="rain backRow"></div>
+    </section>
+
+    <section>
+      <div class="waveBG">
+        <svg
+          viewBox="0 24 150 28"
+          class="waves"
+          shape-rendering="auto"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="waveLines"
+              d="M-160 44c30 0  58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="waveLines">
+            <use
+              xlink:href="#waveLines"
+              x="48"
+              y="0"
+              fill="rgba(9, 48, 40, 0.8)"
+            />
+
+            <use
+              xlink:href="#waveLines"
+              x="48"
+              y="5"
+              fill="rgba(9, 48, 40, 0.6)"
+            />
+
+            <use
+              xlink:href="#waveLines"
+              x="48"
+              y="7"
+              fill="rgba(9, 48, 40, 0.4)"
+            />
+
+            <use
+              xlink:href="#waveLines"
+              x="48"
+              y="10"
+              fill="rgba(9, 48, 40, 0.2)"
+            />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <div class="name">
+      <h1>Hi, I'm Ivy</h1>
+    </div>
+
+    <section class="ocean">
+      <div class="blobs">
+        <div class="blob1"></div>
+        <div class="blob1"></div>
+        <div class="blob1"></div>
+        <div class="blob1"></div>
+        <div class="blob1"></div>
+      </div>
+
+      <div class="blobs">
+        <div class="blob2"></div>
+        <div class="blob2"></div>
+        <div class="blob2"></div>
+        <div class="blob2"></div>
+        <div class="blob2"></div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+
+      <div id="particles">
+        <img src="media/fish1.png" style="opacity: 0.6" class="fish fish1" />
+      </div>
+
+      <div class="projects">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="blobs">
+        <div class="blob3"></div>
+        <div class="blob3"></div>
+        <div class="blob3"></div>
+        <div class="blob3"></div>
+        <div class="blob3"></div>
+      </div>
+    </section>
+
+    <script src="jquery-4.0.0.js"></script>
+    <link rel="stylesheet" href="css/rain.css" />
+    <link rel="stylesheet" href="css/wave.css" />
+    <link rel="stylesheet" href="css/name.css" />
+    <link rel="stylesheet" href="css/ocean.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="js/rain.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

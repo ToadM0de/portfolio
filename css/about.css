@@ -1,0 +1,214 @@
+
+.blobs {
+  filter: url("#goo");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes blob-left-top-anim {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(0.5) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  75% {
+    transform: scale(0.5) translate(50%, 50%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes blob-right-top-anim {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  35% {
+    transform: scale(0.5) translate(0, -50%);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  85% {
+    transform: scale(0.5) translate(0, 50%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes blob-left-bottom-anim {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(0.5) translate(-50%, 0);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  75% {
+    transform: scale(0.5) translate(50%, 0);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes blob-right-bottom-anim {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(0.5) translate(50%, -50%);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  75% {
+    transform: scale(0.5) translate(-50%, 50%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+.blob1 {
+  position: absolute;
+  background: #2a4b4779;
+  left: 13%;
+  top: 55%;
+  width: 390px;
+  height: 390px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -80px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob1:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob1:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob1:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob1:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob1:nth-child(5):before {
+  content: '';
+  background-image: url("/media/profHeadshot.jpg");
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  /* border-radius: 50%; */
+  background-size: cover;
+  background-position: center;
+  top: 61%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+  mask-image: radial-gradient(black 40%, transparent 70%);
+  filter: sepia(40%) saturate(100%);
+}
+
+.blob2 {
+  position: absolute;
+  background: #2a4b4779;
+  left: 13%;
+  top: 55%;
+  width: 500px;
+  height: 250px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 40%;
+  margin-top: 50px;
+  margin-left: 400px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob2:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob2:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob2:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob2:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob2:nth-child(5):before {
+  content: 'I am a Luddy student majoring in Media Arts and Science with a specialization in web design and development, with a minor in the arts. My motive is to create both accessible applications while also making them unique and interesting. I believe that learning both the technical and design aspects of web design makes a good software engineer.';
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: 30px;
+  top: 23%;
+  left: 15%;
+  font-size: 18px;
+  color: #DED3B7;
+}
+
+.blob3 {
+  position: absolute;
+  background: #2a4b4779;
+  left: 13%;
+  top: 160%;
+  width: 500px;
+  height: 450px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 40%;
+  margin-top: 50px;
+  margin-left: 450px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob3:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob3:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob3:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob3:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob3:nth-child(5):before {
+  content: 'I am a Luddy student majoring in Media Arts and Science with a specialization in web design and development, with a minor in the arts. My motive is to create both accessible applications while also making them unique and interesting. I believe that learning both the technical and design aspects of web design makes a good software engineer.';
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: 30px;
+  top: 23%;
+  left: 15%;
+  font-size: 18px;
+  color: #DED3B7;
+}
