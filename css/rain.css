@@ -6,7 +6,7 @@ body {
   min-height: 100%;
   margin: 0;
   overflow: scroll;
-  background: linear-gradient(to bottom, #09091b, #111119);
+  background: linear-gradient(to bottom, #0a010ffb, #111119);
 }
 
 .rain {

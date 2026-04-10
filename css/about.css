@@ -1,3 +1,4 @@
+
 /* making blobs blob */
 .blobs {
   filter: url("#goo");
@@ -489,6 +490,156 @@
   transform: translate(-50%, -65%);
 }
 
+/* blob 9 dr. pepper image */
+.blob9 {
+  position: absolute;
+  background: #2a4b4779;
+  left: -16%;
+  top: 760%;
+  width: 690px;
+  height: 455px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-left: 450px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob9:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob9:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob9:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob9:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob9:nth-child(5):before {
+  content: '';
+  background-image: url("../media/drPepper.png");
+  display: block;
+  position: absolute;
+  width: 630px;
+  height: 370px;
+  background-size: cover;
+  background-position: center;
+  top: 62%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+  border-radius: 10%;
+  -webkit-mask-image: 
+    linear-gradient(to bottom, black 95%, transparent),
+    linear-gradient(to right, black 95%, transparent),
+        linear-gradient(to top, black 95%, transparent),
+    linear-gradient(to left, black 95%, transparent);
+  mask-image: 
+    linear-gradient(to bottom, black 95%, transparent),
+    linear-gradient(to right, black 95%, transparent),
+        linear-gradient(to top, black 95%, transparent),
+    linear-gradient(to left, black 95%, transparent);
+    mask-composite: intersect; 
+  -webkit-mask-composite: source-in;
+}
+
+/* blob 10 dr. pepper info */
+.blob10 {
+  position: absolute;
+  background: #2a4b4779;
+  left: -27%;
+  top: 840%;
+  width: 1050px;
+  height: 530px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-left: 400px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob10:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob10:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob10:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob10:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob10:nth-child(5):before {
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  top: 70%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+}
+
+/* blob 11 contact info */
+.blob11 {
+  position: absolute;
+  background: #2a4b4779;
+  left: -14%;
+  top: 1020%;
+  width: 760px;
+  height: 330px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 40%;
+  margin-top: 50px;
+  margin-left: 400px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob11:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob11:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob11:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob11:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob11:nth-child(5):before {
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  top: 70%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+}
+
 /* info section */
 /* client info */
 .clientInfo {
@@ -526,5 +677,42 @@
   line-height: 1;
   text-align: center;
   color: white;
+  font-size: 18px;
+}
+
+/* dr. pepper info */
+.drPepperInfo {
+  position: absolute;
+  top: 850%;
+  left: 10%;
+  width: 950px;
+  height: 400px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* contact info */
+.contactInfo {
+  position: absolute;
+  top: 1030%;
+  left: 12%;
+  width: 950px;
+  height: 400px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+footer {
+  position: absolute;
+  top: 1095%;
+  left: 12%;
+  width: 950px;
+  line-height: 1;
+  text-align: center;
+  color: #DED3B7;
   font-size: 18px;
 }

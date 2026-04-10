@@ -1,7 +1,7 @@
 .name{
 	position: absolute;
 	top: 53%;
-	left: 77%;
+	left: 85%;
 	-webkit-transform: translate(-50%,-50%);
 	   -moz-transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
@@ -9,8 +9,8 @@
 	        transform: translate(-50%,-50%);
 }
 
-.name, .projects h1{
-	width: 600px;
+.name, .projects, .contact h1{
+	width: 800px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -27,7 +27,20 @@
 	font-size: 5em;
 	position: absolute;
 	top: 135%;
-	left: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+
+.contact{
+	text-align: center;
+	font-size: 5em;
+	position: absolute;
+	top: 990%;
+	left: 49%;
 	-webkit-transform: translate(-50%,-50%);
 	   -moz-transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
