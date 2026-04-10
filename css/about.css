@@ -178,8 +178,8 @@
 .blob3 {
   position: absolute;
   background: #2a4b4779;
-  left: 20%;
-  top: 160%;
+  left: -5%;
+  top: 155%;
   width: 450px;
   height: 450px;
   line-height: 1;
@@ -239,14 +239,14 @@
   position: absolute;
   background: #2a4b4779;
   left: -27%;
-  top: 165%;
-  width: 750px;
-  height: 850px;
+  top: 240%;
+  width: 1050px;
+  height: 620px;
   line-height: 1;
   text-align: center;
   color: white;
   font-size: 40px;
-  border-radius: 40%;
+  border-radius: 20%;
   margin-top: 50px;
   margin-left: 400px;
   animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
@@ -283,9 +283,9 @@
 /* client info */
 .clientInfo {
   position: absolute;
-  top: 175%;
+  top: 250%;
   left: 10%;
-  width: 550px;
+  width: 950px;
   height: 400px;
   line-height: 1;
   text-align: center;
