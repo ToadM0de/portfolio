@@ -279,11 +279,128 @@
   transform: translate(-50%, -65%);
 }
 
+/* blob 5 bart image */
+.blob5 {
+  position: absolute;
+  background: #2a4b4779;
+  left: -13%;
+  top: 365%;
+  width: 690px;
+  height: 470px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-left: 450px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob5:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob5:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob5:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob5:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob5:nth-child(5):before {
+  content: '';
+  background-image: url("../media/bart.png");
+  display: block;
+  position: absolute;
+  width: 590px;
+  height: 370px;
+  background-size: cover;
+  background-position: center;
+  top: 61%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+  border-radius: 10%;
+  -webkit-mask-image: 
+    linear-gradient(to bottom, black 95%, transparent),
+    linear-gradient(to right, black 95%, transparent),
+        linear-gradient(to top, black 95%, transparent),
+    linear-gradient(to left, black 95%, transparent);
+  mask-image: 
+    linear-gradient(to bottom, black 95%, transparent),
+    linear-gradient(to right, black 95%, transparent),
+        linear-gradient(to top, black 95%, transparent),
+    linear-gradient(to left, black 95%, transparent);
+    mask-composite: intersect; 
+  -webkit-mask-composite: source-in;
+}
+
+/* blob 6 bart info */
+.blob6 {
+  position: absolute;
+  background: #2a4b4779;
+  left: -27%;
+  top: 455%;
+  width: 1050px;
+  height: 500px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-left: 400px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
+}
+.blob6:nth-child(2) {
+  animation-name: blob-right-top-anim;
+}
+.blob6:nth-child(3) {
+  animation-name: blob-left-bottom-anim;
+  animation-delay: 0.2s;
+}
+.blob6:nth-child(4) {
+  animation-name: blob-right-bottom-anim;
+  animation-delay: 0.4s;
+}
+.blob6:nth-child(5) {
+  animation: none;
+  font-size: 26px;
+  position: relative;
+}
+.blob6:nth-child(5):before {
+  display: block;
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  top: 70%;
+  left: 51%;
+  transform: translate(-50%, -65%);
+}
+
 /* info section */
 /* client info */
 .clientInfo {
   position: absolute;
   top: 250%;
+  left: 10%;
+  width: 950px;
+  height: 400px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.bartInfo {
+  position: absolute;
+  top: 465%;
   left: 10%;
   width: 950px;
   height: 400px;
