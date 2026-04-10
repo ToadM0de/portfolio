@@ -110,7 +110,7 @@
 }
 .blob1:nth-child(5):before {
   content: '';
-  background-image: url("/media/profHeadshot.jpg");
+  background-image: url("../media/profHeadshot.jpg");
   display: block;
   position: absolute;
   width: 340px;
